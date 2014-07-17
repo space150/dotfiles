@@ -1,0 +1,4 @@
+EXCLUDES="README.md Brewfile"
+DOTFILES_DIRS="$HOME/dotfiles/local $HOME/dotfiles/space"
+
+[[ -e ~/.rcrc.local ]] && source ~/.rcrc.local
