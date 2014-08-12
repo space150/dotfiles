@@ -80,10 +80,6 @@ set wildignore+=.git/*,.hg/*,.svn/*,*/swp/*,*/undo/*,Gemfile.lock
 " Don't redraw while executing macros.
 set lazyredraw
 
-" Show listchars.
-set listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:·
-set list
-
 " Backspace over things.
 set backspace=indent,eol,start
 
