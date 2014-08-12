@@ -95,9 +95,8 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
-" Make it obvious where 80 characters is.
-set colorcolumn=+1
-set textwidth=80
+" Mark the 81st column to make it obvious where 80 characters is.
+set colorcolumn=81
 
 " Don't drop buffers when no longer shown in a window.
 set hidden
