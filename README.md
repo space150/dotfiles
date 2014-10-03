@@ -16,12 +16,12 @@ mkdir dotfiles
 git clone git@github.com:space150/dotfiles dotfiles/space
 
 # Install rcm
-cd dotfiles/space
-brew bundle
+brew tap thoughtbot/formulae
+brew install rcm
 
 # Link the dotfiles
 cd
-env RCRC=$HOME/dotfiles/space/rcrc rcup -x README.md -x Brewfile
+env RCRC=$HOME/dotfiles/space/rcrc rcup -x README.md
 ```
 
 You can refer to the excellent docs thoughtbot has in [it's dotfiles
