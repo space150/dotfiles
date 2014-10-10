@@ -224,6 +224,11 @@ augroup Markdown
   autocmd FileType markdown set spell
 augroup END
 
+augroup Wax
+  autocmd!
+  autocmd BufNewFile,BufRead Waxfile set filetype=yaml
+augroup END
+
 
 
 "=========================================================="
