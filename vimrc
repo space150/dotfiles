@@ -303,7 +303,7 @@ nnoremap <f10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name")
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<cr>
 
 " Remove trailing whitespace (except when escaped).
-nnoremap <leader>rw :%s/[^\\]\s\+$//e<cr>:noh<cr>
+nnoremap <leader>rw :%s/[^\\]\zs\s\+\ze$//e<cr>:noh<cr>
 
 " Repeat the last :! command.
 " *maybe
