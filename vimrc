@@ -320,6 +320,13 @@ nnoremap <cr> :nohlsearch<cr>
 " Local config
 "=========================================================="
 
+" Try and source ~/.vimrc.local.
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
+endif
+
+" Try and source $PROJECT_VIMRC, if set.
+let project_conf=$PROJECT_VIMRC
+if filereadable(expand(project_conf))
+  execute "source " . project_conf
 endif
