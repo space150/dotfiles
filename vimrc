@@ -31,9 +31,6 @@ if has('gui_running')
     set macmeta
     set fuoptions=maxvert,maxhorz
   endif
-else
-  " Set terminal type.
-  set term=$TERM
 endif
 
 " Prevent Vim from clobbering the scrollback buffer.
