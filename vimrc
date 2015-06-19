@@ -11,11 +11,6 @@ set encoding=utf-8
 " Use syntax highlighting.
 syntax on
 
-" Load the bundles file if it's there.
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
-endif
-
 " Enable filetype detections.
 filetype plugin indent on
 
